@@ -1,4 +1,5 @@
-﻿using Service.Helpers;
+﻿using CourseApplication.Controllers;
+using Service.Helpers;
 using Service.Services;
 using System;
 using System.Collections.Generic;
@@ -45,6 +46,38 @@ namespace CourseApplication.Menus
 
                 switch (input)
                 {
+                    case "1":
+                        StudentController.CreateStudent(studentService, groupService);
+                        break;
+
+                    case "2":
+                        StudentController.UpdateStudent(studentService, groupService);
+                        break;
+
+                    case "3":
+                        StudentController.GetStudentById(studentService, groupService);
+                        break;
+
+                    case "4":
+                        StudentController.DeleteStudent(studentService);
+                        break;
+
+                    case "5":
+                        StudentController.GetStudentByAge(studentService);
+                        break;
+
+                    case "6":
+                        StudentController.GetAllStudentByGroupId(studentService);
+                        break;
+
+                    case "7":
+                        StudentController.SearchStudentByNameOrSurname(studentService);
+                        break;
+
+                    case "8":
+                        StudentController.GetAllStudents(studentService);
+                        break;
+
                     case "9":
                         Console.Clear();
                         Console.WriteLine(" _________Menu________");

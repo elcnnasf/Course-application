@@ -11,7 +11,8 @@ namespace CourseApplication.Controllers
 {
     public class GroupController
     {
-        private void CreateGroup(GroupService group)
+        GroupService groupService = new GroupService();
+        public static void CreateGroup(GroupService group)
         {
             Console.WriteLine("_______Create Group_______");
 
@@ -55,9 +56,7 @@ namespace CourseApplication.Controllers
             Console.ReadKey();
         }
 
-
-
-        private void UpdateGroup(GroupService groupService)
+        public static void UpdateGroup(GroupService groupService)
         {
             Console.WriteLine("_______Update Group_______");
             int id;
@@ -105,9 +104,7 @@ namespace CourseApplication.Controllers
             Console.ReadKey();
         }
 
-
-
-        private void GetGroupById(GroupService groupService)
+        public static void GetGroupById(GroupService groupService)
         {
             Console.WriteLine("_______Get Group by ID_______");
 
@@ -130,8 +127,7 @@ namespace CourseApplication.Controllers
             Console.ReadKey();
         }
 
-
-        private void DeleteGroup(GroupService group)
+        public static void DeleteGroup(GroupService group)
         {
             Console.WriteLine("_______Delete Group_______");
 
@@ -151,7 +147,7 @@ namespace CourseApplication.Controllers
             Console.ReadKey();
         }
 
-        private void GetGroupsByTeacher(GroupService group)
+        public static void GetGroupsByTeacher(GroupService group)
         {
             Console.WriteLine("_______Get Groups by Teacher_______");
 
@@ -170,7 +166,7 @@ namespace CourseApplication.Controllers
             Console.ReadKey();
         }
 
-        private void GetGroupsByRoom(GroupService group)
+        public static void GetGroupsByRoom(GroupService group)
         {
             Console.WriteLine("_______Get Groups by Room_______");
 
@@ -197,7 +193,7 @@ namespace CourseApplication.Controllers
             Console.ReadKey();
         }
 
-        private void GetAllGroups(GroupService group)
+        public static void GetAllGroups(GroupService group)
         {
             Console.WriteLine("_______All Groups_______");
 
@@ -213,7 +209,7 @@ namespace CourseApplication.Controllers
             Console.ReadKey();
         }
 
-        private void SearchGroupsByName(GroupService service)
+        public static void SearchGroupsByName(GroupService service)
         {
             Console.WriteLine("_______Search Groups by Name_______");
 

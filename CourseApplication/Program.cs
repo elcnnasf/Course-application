@@ -1,4 +1,5 @@
 ﻿using CourseApplication.Menus;
+using Service.Helpers;
 
 namespace CourseApplication
 {
@@ -40,6 +41,7 @@ namespace CourseApplication
                 else
                 {
                     Console.Beep();
+                    Helpers.ConsoleColor(ConsoleColor.Red, "Wrong selection! Try again.");
                     goto firsmenu;
                 }
             }

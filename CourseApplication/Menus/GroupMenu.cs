@@ -1,4 +1,5 @@
-﻿using Service.Helpers;
+﻿using CourseApplication.Controllers;
+using Service.Helpers;
 using Service.Services;
 using System;
 using System.Collections.Generic;
@@ -44,6 +45,38 @@ namespace CourseApplication.Menus
 
                 switch (input)
                 {
+                    case "1":
+                        GroupController.CreateGroup(groupService);
+                        break;
+
+                    case "2":
+                        GroupController.UpdateGroup(groupService);
+                        break;
+
+                    case "3":
+                        GroupController.GetGroupById(groupService);
+                        break;
+
+                    case "4":
+                        GroupController.DeleteGroup(groupService);
+                        break;
+
+                    case "5":
+                        GroupController.GetGroupsByTeacher(groupService);
+                        break;
+
+                    case "6":
+                        GroupController.GetGroupsByRoom(groupService);
+                        break;
+
+                    case "7":
+                        GroupController.GetAllGroups(groupService);
+                        break;
+
+                    case "8":
+                        GroupController.SearchGroupsByName(groupService);
+                        break;
+
                     case "9":
                         Console.Clear();
                         Console.WriteLine(" _________Menu________");
