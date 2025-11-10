@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Service.Helpers;
+using Service.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +12,59 @@ namespace CourseApplication.Menus
     {
         public void Show()
         {
+            GroupService groupService = new GroupService();
+            StudentService studentService = new StudentService();
+
+            while (true)
+            {
+                Console.Clear();
+                Helpers.ConsoleColor(ConsoleColor.Green, "Welcome to student menu:");
+                Console.WriteLine(" ________________Student menu_____________");
+                Console.WriteLine("|                                         |");
+                Console.WriteLine("|  1-Create Student                       |");
+                Console.WriteLine("|  2-Update Student                       |");
+                Console.WriteLine("|  3-Get student by id                    |");
+                Console.WriteLine("|  4-Delete student                       |");
+                Console.WriteLine("|  5-Get students by age                  |");
+                Console.WriteLine("|  6- Get all students by group id        |");
+                Console.WriteLine("|  7-Search for students by name/surname  |");
+                Console.WriteLine("|  8-Get All Students                     |");
+                Console.WriteLine("|  9-Return to main menu                  |");
+                Console.WriteLine("|  0-Quit                                 |");
+                Console.WriteLine("|_________________________________________|");
+                Console.WriteLine(" ");
+            Input: Console.Write("Enter your selection: ");
+                string input = Console.ReadLine();
+                int number;
+
+                if (!int.TryParse(input, out number))
+                {
+                    Console.Beep();
+                    Helpers.ConsoleColor(ConsoleColor.Red, "Input type is not correct!");
+                }
+
+                switch (input)
+                {
+                    case "9":
+                        Console.Clear();
+                        Console.WriteLine(" _________Menu________");
+                        Console.WriteLine("|                     |");
+                        Console.WriteLine("|  1-Group methods    |");
+                        Console.WriteLine("|  2-Student methods  |");
+                        Console.WriteLine("|  3-Quit             |");
+                        Console.WriteLine("|_____________________|");
+                        return;
+
+                    case "0":
+                        Environment.Exit(0);
+                        break;
+
+                    default:
+                        Console.Beep();
+                        Helpers.ConsoleColor(ConsoleColor.Red, "Wrong selection! Try again.");
+                        goto Input;
+                }
+            }
         }
     }
 }
