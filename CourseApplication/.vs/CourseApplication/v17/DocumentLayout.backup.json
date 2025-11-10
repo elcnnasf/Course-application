@@ -3,10 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\Desktop\\Course-application\\CourseApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D61150AD-B0B3-4479-8EA3-23321CC4FEF6}|..\\Service\\Service.csproj|c:\\users\\hp\\desktop\\course-application\\service\\services\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3D30B252-2A0B-4C4B-9149-F85D1CBD47C5}|CourseApplication.csproj|c:\\users\\hp\\desktop\\course-application\\courseapplication\\menus\\studentmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D30B252-2A0B-4C4B-9149-F85D1CBD47C5}|CourseApplication.csproj|solutionrelative:menus\\studentmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D30B252-2A0B-4C4B-9149-F85D1CBD47C5}|CourseApplication.csproj|c:\\users\\hp\\desktop\\course-application\\courseapplication\\menus\\groupmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D30B252-2A0B-4C4B-9149-F85D1CBD47C5}|CourseApplication.csproj|solutionrelative:menus\\groupmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D30B252-2A0B-4C4B-9149-F85D1CBD47C5}|CourseApplication.csproj|c:\\users\\hp\\desktop\\course-application\\courseapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D30B252-2A0B-4C4B-9149-F85D1CBD47C5}|CourseApplication.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D61150AD-B0B3-4479-8EA3-23321CC4FEF6}|..\\Service\\Service.csproj|c:\\users\\hp\\desktop\\course-application\\service\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61150AD-B0B3-4479-8EA3-23321CC4FEF6}|..\\Service\\Service.csproj|c:\\users\\hp\\desktop\\course-application\\service\\services\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61150AD-B0B3-4479-8EA3-23321CC4FEF6}|..\\Service\\Service.csproj|c:\\users\\hp\\desktop\\course-application\\service\\services\\interfaces\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61150AD-B0B3-4479-8EA3-23321CC4FEF6}|..\\Service\\Service.csproj|c:\\users\\hp\\desktop\\course-application\\service\\helpers\\helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -16,30 +34,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentMenu.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Course-application\\CourseApplication\\Menus\\StudentMenu.cs",
+              "RelativeDocumentMoniker": "Menus\\StudentMenu.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Course-application\\CourseApplication\\Menus\\StudentMenu.cs",
+              "RelativeToolTip": "Menus\\StudentMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T13:54:52.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Course-application\\CourseApplication\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Course-application\\CourseApplication\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T13:54:39.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "GroupMenu.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Course-application\\CourseApplication\\Menus\\GroupMenu.cs",
+              "RelativeDocumentMoniker": "Menus\\GroupMenu.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Course-application\\CourseApplication\\Menus\\GroupMenu.cs",
+              "RelativeToolTip": "Menus\\GroupMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T13:52:43.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IGroupService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Course-application\\Service\\Services\\Interfaces\\IGroupService.cs",
+              "RelativeDocumentMoniker": "..\\Service\\Services\\Interfaces\\IGroupService.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Course-application\\Service\\Services\\Interfaces\\IGroupService.cs",
+              "RelativeToolTip": "..\\Service\\Services\\Interfaces\\IGroupService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T13:51:36.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Helpers.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Course-application\\Service\\Helpers\\Helpers.cs",
+              "RelativeDocumentMoniker": "..\\Service\\Helpers\\Helpers.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Course-application\\Service\\Helpers\\Helpers.cs",
+              "RelativeToolTip": "..\\Service\\Helpers\\Helpers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T13:51:29.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "StudentService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Course-application\\Service\\Services\\StudentService.cs",
               "RelativeDocumentMoniker": "..\\Service\\Services\\StudentService.cs",
               "ToolTip": "C:\\Users\\hp\\Desktop\\Course-application\\Service\\Services\\StudentService.cs",
               "RelativeToolTip": "..\\Service\\Services\\StudentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAADwv4sAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-10T13:47:09.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "GroupService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Course-application\\Service\\Services\\GroupService.cs",
               "RelativeDocumentMoniker": "..\\Service\\Services\\GroupService.cs",
               "ToolTip": "C:\\Users\\hp\\Desktop\\Course-application\\Service\\Services\\GroupService.cs",
               "RelativeToolTip": "..\\Service\\Services\\GroupService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAA9wFgAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-10T13:46:58.634Z",
               "EditorCaption": ""
