@@ -14,7 +14,7 @@ namespace CourseApplication.Controllers
         GroupService groupService = new GroupService();
         public static void CreateGroup(GroupService group)
         {
-            Console.WriteLine("_______Create Group_______");
+            Console.WriteLine("═════════ Create Group ═════════");
 
             Console.Write("Enter group name: ");
             string name = Console.ReadLine();
@@ -58,7 +58,7 @@ namespace CourseApplication.Controllers
 
         public static void UpdateGroup(GroupService groupService)
         {
-            Console.WriteLine("_______Update Group_______");
+            Console.WriteLine("═════════ Update Group ═════════");
             int id;
             while (true)
             {
@@ -106,7 +106,7 @@ namespace CourseApplication.Controllers
 
         public static void GetGroupById(GroupService groupService)
         {
-            Console.WriteLine("_______Get Group by ID_______");
+            Console.WriteLine("═════════ Get Group by ID ═════════");
 
             int id;
             while (true)
@@ -129,7 +129,7 @@ namespace CourseApplication.Controllers
 
         public static void DeleteGroup(GroupService group)
         {
-            Console.WriteLine("_______Delete Group_______");
+            Console.WriteLine("═════════ Delete Group ═════════");
 
             int id;
             while (true)
@@ -149,7 +149,7 @@ namespace CourseApplication.Controllers
 
         public static void GetGroupsByTeacher(GroupService group)
         {
-            Console.WriteLine("_______Get Groups by Teacher_______");
+            Console.WriteLine("═════════ Get Groups by Teacher ═════════");
 
             Console.Write("Enter teacher name: ");
             string teacher = Console.ReadLine();
@@ -168,7 +168,7 @@ namespace CourseApplication.Controllers
 
         public static void GetGroupsByRoom(GroupService group)
         {
-            Console.WriteLine("_______Get Groups by Room_______");
+            Console.WriteLine("═════════ Get Groups by Room ═════════");
 
             int room;
             while (true)
@@ -195,7 +195,7 @@ namespace CourseApplication.Controllers
 
         public static void GetAllGroups(GroupService group)
         {
-            Console.WriteLine("_______All Groups_______");
+            Console.WriteLine("═════════ All Groups ═════════");
 
             var allGroups = group.GetAll();
 
@@ -211,7 +211,7 @@ namespace CourseApplication.Controllers
 
         public static void SearchGroupsByName(GroupService service)
         {
-            Console.WriteLine("_______Search Groups by Name_______");
+            Console.WriteLine("═════════ Search Groups by Name ═════════");
 
             Console.Write("Enter a name: ");
             string keyword = Console.ReadLine();

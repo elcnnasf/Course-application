@@ -20,19 +20,23 @@ namespace CourseApplication.Menus
             {
                 Console.Clear();
                 Helpers.ConsoleColor(ConsoleColor.Green, "Welcome to student menu:");
-                Console.WriteLine(" ________________Student menu_____________");
-                Console.WriteLine("|                                         |");
-                Console.WriteLine("|  1-Create Student                       |");
-                Console.WriteLine("|  2-Update Student                       |");
-                Console.WriteLine("|  3-Get student by id                    |");
-                Console.WriteLine("|  4-Delete student                       |");
-                Console.WriteLine("|  5-Get students by age                  |");
-                Console.WriteLine("|  6- Get all students by group id        |");
-                Console.WriteLine("|  7-Search for students by name/surname  |");
-                Console.WriteLine("|  8-Get All Students                     |");
-                Console.WriteLine("|  9-Return to main menu                  |");
-                Console.WriteLine("|  0-Quit                                 |");
-                Console.WriteLine("|_________________________________________|");
+
+                Console.WriteLine("╔═════════════════════════════════════════════╗");
+                Console.WriteLine("║                 Student menu                ║");
+                Console.WriteLine("╠═════════════════════════════════════════════╣");
+                Console.WriteLine("║                                             ║");
+                Console.WriteLine("║     1-Create Student                        ║");
+                Console.WriteLine("║     2-Update Student                        ║");
+                Console.WriteLine("║     3-Get student by id                     ║");
+                Console.WriteLine("║     4-Delete student                        ║");
+                Console.WriteLine("║     5-Get students by age                   ║");
+                Console.WriteLine("║     6- Get all students by group id         ║");
+                Console.WriteLine("║     7-Search for students by name/surname   ║");
+                Console.WriteLine("║     8-Get All Students                      ║");
+                Console.WriteLine("║     9-Return to main menu                   ║");
+                Console.WriteLine("║     0-Quit                                  ║");
+                Console.WriteLine("║                                             ║");
+                Console.WriteLine("╚═════════════════════════════════════════════╝");
                 Console.WriteLine(" ");
             Input: Console.Write("Enter your selection: ");
                 string input = Console.ReadLine();
@@ -80,13 +84,14 @@ namespace CourseApplication.Menus
 
                     case "9":
                         Console.Clear();
-                        Console.WriteLine(" _________Menu________");
-                        Console.WriteLine("|                     |");
-                        Console.WriteLine("|  1-Group methods    |");
-                        Console.WriteLine("|  2-Student methods  |");
-                        Console.WriteLine("|  3-Music settings   |");
-                        Console.WriteLine("|  4-Quit             |");
-                        Console.WriteLine("|_____________________| ");
+                        Console.WriteLine("╔═════════════════════╗");
+                        Console.WriteLine("║        Menu         ║");
+                        Console.WriteLine("╠═════════════════════╣");
+                        Console.WriteLine("║  1-Group methods    ║");
+                        Console.WriteLine("║  2-Student methods  ║");
+                        Console.WriteLine("║  3-Music settings   ║");
+                        Console.WriteLine("║  4-Quit             ║");
+                        Console.WriteLine("╚═════════════════════╝");
                         return;
 
                     case "0":

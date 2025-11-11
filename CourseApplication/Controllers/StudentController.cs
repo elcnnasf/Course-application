@@ -13,7 +13,7 @@ namespace CourseApplication.Controllers
     {
         public static void CreateStudent(StudentService studentService, GroupService groupService)
         {
-            Console.WriteLine("_______Create Student_______");
+            Console.WriteLine("═════════ Create Student ═════════");
 
             string name;
             while (true)
@@ -77,7 +77,7 @@ namespace CourseApplication.Controllers
 
         public static void UpdateStudent(StudentService studentService, GroupService groupService)
         {
-            Console.WriteLine("_______Update Student_______");
+            Console.WriteLine("═════════ Update Student ═════════");
 
             int id;
             while (true)
@@ -159,7 +159,7 @@ namespace CourseApplication.Controllers
 
         public static void GetStudentById(StudentService studentService, GroupService groupService)
         {
-            Console.WriteLine("_______Get Student by ID_______");
+            Console.WriteLine("═════════ Get Student by ID ═════════");
 
             int id;
             while (true)
@@ -182,7 +182,7 @@ namespace CourseApplication.Controllers
 
         public static void DeleteStudent(StudentService studentService)
         {
-            Console.WriteLine("_______Delete Student_______");
+            Console.WriteLine("═════════ Delete Student ═════════");
 
             int id;
             while (true)
@@ -201,7 +201,7 @@ namespace CourseApplication.Controllers
 
         public static void GetStudentByAge(StudentService studentService)
         {
-            Console.WriteLine("_______Get student by age_______");
+            Console.WriteLine("═════════ Get student by age ═════════");
 
             int age;
             while (true)
@@ -225,7 +225,7 @@ namespace CourseApplication.Controllers
 
         public static void GetAllStudentByGroupId(StudentService studentService)
         {
-            Console.WriteLine("_______Get all students by group id_______");
+            Console.WriteLine("═════════ Get all students by group id ═════════");
 
             int groupId;
             while (true)
@@ -243,7 +243,7 @@ namespace CourseApplication.Controllers
 
         public static void SearchStudentByNameOrSurname(StudentService studentService)
         {
-            Console.WriteLine("_______Serach students by name/surname_______");
+            Console.WriteLine("═════════ Serach students by name/surname ═════════");
 
             Console.Write("Enter a name/surname: ");
             string keyword = Console.ReadLine();
@@ -262,7 +262,7 @@ namespace CourseApplication.Controllers
 
         public static void GetAllStudents(StudentService studentService)
         {
-            Console.WriteLine("_______All Students_______");
+            Console.WriteLine("═════════ All Students ═════════");
 
             var allstudents = studentService.GetAll();
 

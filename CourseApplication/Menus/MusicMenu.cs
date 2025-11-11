@@ -1,9 +1,6 @@
 ﻿using Service.Helpers;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using WMPLib;
 
 namespace CourseApplication.Menus
@@ -11,98 +8,125 @@ namespace CourseApplication.Menus
     internal class MusicMenu
     {
         private static WindowsMediaPlayer player = new WindowsMediaPlayer();
-        public void Show() 
-        {
 
-            while (true) 
+        public void Show()
+        {
+            while (true)
             {
                 Console.Clear();
-                Console.WriteLine("___________Music Menu_________");
-                Console.WriteLine("|                             |");
-                Console.WriteLine("|   1-Change & Play music     |");
-                Console.WriteLine("|   2-Pause Music             |");
-                Console.WriteLine("|   3-Resume music            |");
-                Console.WriteLine("|   4-Stop music              |");
-                Console.WriteLine("|   5-Return to the main menu |");
-                Console.WriteLine("|_____________________________|");
-                Console.WriteLine(" ");
-            Input: Console.Write("Enter your selection: ");
-                var choice = Console.ReadLine();
-                switch (choice) 
+                Console.WriteLine("╔═════════════════════════════╗");
+                Console.WriteLine("║          Music Menu         ║");
+                Console.WriteLine("╠═════════════════════════════╣");
+                Console.WriteLine("║                             ║");
+                Console.WriteLine("║  1-Change & Play music      ║");
+                Console.WriteLine("║  2-Pause Music              ║");
+                Console.WriteLine("║  3-Resume Music             ║");
+                Console.WriteLine("║  4-Stop Music               ║");
+                Console.WriteLine("║  5-Return to the main menu  ║");
+                Console.WriteLine("║                             ║");
+                Console.WriteLine("╚═════════════════════════════╝");
+                Console.WriteLine("");
+                Console.Write("Enter your selection: ");
+                string choice = Console.ReadLine();
+
+                switch (choice)
                 {
                     case "1":
-               firsmenu:Console.WriteLine("________Options______");
-                        Console.WriteLine("|                   |");
-                        Console.WriteLine("|  1-Slow Cinematic |");
-                        Console.WriteLine("|  2-Slow piano     |");
-                        Console.WriteLine("|  3-Piano          |");
-                        Console.WriteLine("|___________________| ");
-                        Console.WriteLine(" ");
-                        Console.Write("Your selection:");
-                        var music = Console.ReadLine();
-                        if(music == "1") 
-                        {
-                            player.controls.stop();
-                            player.URL = @"C:\Users\hp\Desktop\Course-application\Musics\ConsoleAppMusic1.mp3";
-                            player.controls.play();
-                            Console.WriteLine("Music 1 is playing...");
-                            Console.ReadKey();
-                        }
-                        else if(music == "2") 
-                        {
-                            player.controls.stop();
-                            player.URL = @"C:\Users\hp\Desktop\Course-application\Musics\ConsoleAppMusic2.mp3";
-                            player.controls.play();
-                            Console.WriteLine("Music 2 is playing...");
-                            Console.ReadKey();
-                        }
-                        else if (music == "3") 
-                        {
-                            player.controls.stop();
-                            player.URL = @"C:\Users\hp\Desktop\Course-application\Musics\ConsoleAppMusic3.mp3";
-                            player.controls.play();
-                            Console.WriteLine("Music 3 is playing...");
-                            Console.ReadKey();
-                        }
-                        else 
-                        {
-                            Console.Beep();
-                            Helpers.ConsoleColor(ConsoleColor.Red, "Wrong selection! Try again.");
-                            goto firsmenu;
-                        }
+                        ShowMusicOptions();
                         break;
 
                     case "2":
                         player.controls.pause();
-                        Console.WriteLine("Music paused...");
+                        Helpers.ConsoleColor(ConsoleColor.Yellow, "Music paused...");
                         Console.ReadKey();
                         break;
+
                     case "3":
                         player.controls.play();
-                        Console.WriteLine("Music resumed...");
+                        Helpers.ConsoleColor(ConsoleColor.Green, "Music resumed...");
                         Console.ReadKey();
                         break;
+
                     case "4":
                         player.controls.stop();
-                        Console.WriteLine("Music stopped...");
+                        Helpers.ConsoleColor(ConsoleColor.Red, "Music stopped...");
                         Console.ReadKey();
                         break;
+
                     case "5":
                         Console.Clear();
-                        Console.WriteLine(" _________Menu________");
-                        Console.WriteLine("|                     |");
-                        Console.WriteLine("|  1-Group methods    |");
-                        Console.WriteLine("|  2-Student methods  |");
-                        Console.WriteLine("|  3-Music settings   |");
-                        Console.WriteLine("|  4-Quit             |");
-                        Console.WriteLine("|_____________________| ");
-                        return;
+                        Console.WriteLine("╔═════════════════════╗");
+                        Console.WriteLine("║        Menu         ║");
+                        Console.WriteLine("╠═════════════════════╣");
+                        Console.WriteLine("║  1-Group methods    ║");
+                        Console.WriteLine("║  2-Student methods  ║");
+                        Console.WriteLine("║  3-Music settings   ║");
+                        Console.WriteLine("║  4-Quit             ║");
+                        Console.WriteLine("╚═════════════════════╝");
+                        return; 
+
                     default:
                         Console.Beep();
-                        Helpers.ConsoleColor(ConsoleColor.Red, "Wrong selection! Try again."); 
-                        goto Input;
-
+                        Helpers.ConsoleColor(ConsoleColor.Red, "Wrong selection! Try again.");
+                        Console.ReadKey();
+                        break;
                 }
+            }
+        }
+
+        private void ShowMusicOptions()
+        {
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("╔═════════════════════╗");
+                Console.WriteLine("║       Options       ║");
+                Console.WriteLine("╠═════════════════════╣");
+                Console.WriteLine("║  1-Slow Cinematic   ║");
+                Console.WriteLine("║  2-Slow Piano       ║");
+                Console.WriteLine("║  3-Piano            ║");
+                Console.WriteLine("║  4-Return           ║");
+                Console.WriteLine("╚═════════════════════╝");
+                Console.WriteLine();
+                Console.Write("Your selection: ");
+                string musicChoice = Console.ReadLine();
+
+                string musicFile = musicChoice switch
+                {
+                    "1" => "ConsoleAppMusic1.mp3",
+                    "2" => "ConsoleAppMusic2.mp3",
+                    "3" => "ConsoleAppMusic3.mp3",
+                    "4" => null, 
+                    _ => ""
+                };
+
+                if (musicFile == null)
+                    break; 
+
+                if (string.IsNullOrEmpty(musicFile))
+                {
+                    Console.Beep();
+                    Helpers.ConsoleColor(ConsoleColor.Red, "Wrong selection! Try again.");
+                    Console.ReadKey();
+                    continue; 
+                }
+
+                string musicFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Musics");
+                string musicPath = Path.Combine(musicFolder, musicFile);
+
+                if (!File.Exists(musicPath))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Music file not found... ");
+                    Console.ResetColor();
+                    Console.ReadKey();
+                    continue; 
+                }
+                player.URL = musicPath;
+                player.controls.play();
+                Helpers.ConsoleColor(ConsoleColor.Green, $"{musicFile} is now playing...");
+                Console.ReadKey();
+                break; 
             }
         }
     }

@@ -19,20 +19,24 @@ namespace CourseApplication.Menus
             {
                 Console.Clear();
                 Helpers.ConsoleColor(ConsoleColor.Green, "Welcome to group menu:");
-                Console.WriteLine(" _______________Group menu_____________");
-                Console.WriteLine("|                                      |");
-                Console.WriteLine("|      1-Create Group                  |");
-                Console.WriteLine("|      2-Update Group                  |");
-                Console.WriteLine("|      3-Get group by id               |");
-                Console.WriteLine("|      4-Delete Group                  |");
-                Console.WriteLine("|      5-Get all groups by teacher     |");
-                Console.WriteLine("|      6-Get all groups by room        |");
-                Console.WriteLine("|      7-Get all groups                |");
-                Console.WriteLine("|      8-Search groups by name         |");
-                Console.WriteLine("|      9-Return to main menu           |");
-                Console.WriteLine("|      0-Quit                          |");
-                Console.WriteLine("|______________________________________|");
-                Console.WriteLine();
+
+                Console.WriteLine("╔════════════════════════════════════════╗");
+                Console.WriteLine("║               Group menu               ║");
+                Console.WriteLine("╠════════════════════════════════════════╣");
+                Console.WriteLine("║                                        ║");
+                Console.WriteLine("║       1-Create Group                   ║");
+                Console.WriteLine("║       2-Update Group                   ║");
+                Console.WriteLine("║       3-Get group by id                ║");
+                Console.WriteLine("║       4-Delete Group                   ║");
+                Console.WriteLine("║       5-Get all groups by teacher      ║");
+                Console.WriteLine("║       6-Get all groups by room         ║");
+                Console.WriteLine("║       7-Get all groups                 ║");
+                Console.WriteLine("║       8-Search groups by name          ║");
+                Console.WriteLine("║       9-Return to main menu            ║");
+                Console.WriteLine("║       0-Quit                           ║");
+                Console.WriteLine("║                                        ║");
+                Console.WriteLine("╚════════════════════════════════════════╝");
+                Console.WriteLine(" ");
 
             Input: Console.Write("Enter your selection: ");
                 string input = Console.ReadLine();
@@ -79,13 +83,14 @@ namespace CourseApplication.Menus
 
                     case "9":
                         Console.Clear();
-                        Console.WriteLine(" _________Menu________");
-                        Console.WriteLine("|                     |");
-                        Console.WriteLine("|  1-Group methods    |");
-                        Console.WriteLine("|  2-Student methods  |");
-                        Console.WriteLine("|  3-Music settings   |");
-                        Console.WriteLine("|  4-Quit             |");
-                        Console.WriteLine("|_____________________| ");
+                        Console.WriteLine("╔═════════════════════╗");
+                        Console.WriteLine("║        Menu         ║");
+                        Console.WriteLine("╠═════════════════════╣");
+                        Console.WriteLine("║  1-Group methods    ║");
+                        Console.WriteLine("║  2-Student methods  ║");
+                        Console.WriteLine("║  3-Music settings   ║");
+                        Console.WriteLine("║  4-Quit             ║");
+                        Console.WriteLine("╚═════════════════════╝");
                         return;
 
                     case "0":

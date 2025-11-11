@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\Desktop\\Course-application\\CourseApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D30B252-2A0B-4C4B-9149-F85D1CBD47C5}|CourseApplication.csproj|c:\\users\\hp\\desktop\\course-application\\courseapplication\\menus\\musicmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D30B252-2A0B-4C4B-9149-F85D1CBD47C5}|CourseApplication.csproj|solutionrelative:menus\\musicmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3D30B252-2A0B-4C4B-9149-F85D1CBD47C5}|CourseApplication.csproj|c:\\users\\hp\\desktop\\course-application\\courseapplication\\menus\\groupmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D30B252-2A0B-4C4B-9149-F85D1CBD47C5}|CourseApplication.csproj|solutionrelative:menus\\groupmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D30B252-2A0B-4C4B-9149-F85D1CBD47C5}|CourseApplication.csproj|c:\\users\\hp\\desktop\\course-application\\courseapplication\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D30B252-2A0B-4C4B-9149-F85D1CBD47C5}|CourseApplication.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D30B252-2A0B-4C4B-9149-F85D1CBD47C5}|CourseApplication.csproj|c:\\users\\hp\\desktop\\course-application\\courseapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,8 +19,8 @@
       "RelativeMoniker": "D:0:0:{3D30B252-2A0B-4C4B-9149-F85D1CBD47C5}|CourseApplication.csproj|solutionrelative:menus\\studentmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D30B252-2A0B-4C4B-9149-F85D1CBD47C5}|CourseApplication.csproj|c:\\users\\hp\\desktop\\course-application\\courseapplication\\menus\\groupmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D30B252-2A0B-4C4B-9149-F85D1CBD47C5}|CourseApplication.csproj|solutionrelative:menus\\groupmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3D30B252-2A0B-4C4B-9149-F85D1CBD47C5}|CourseApplication.csproj|c:\\users\\hp\\desktop\\course-application\\courseapplication\\menus\\musicmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D30B252-2A0B-4C4B-9149-F85D1CBD47C5}|CourseApplication.csproj|solutionrelative:menus\\musicmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Course-application\\CourseApplication\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Course-application\\CourseApplication\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYBAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T11:04:59.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "GroupMenu.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Course-application\\CourseApplication\\Menus\\GroupMenu.cs",
               "RelativeDocumentMoniker": "Menus\\GroupMenu.cs",
               "ToolTip": "C:\\Users\\hp\\Desktop\\Course-application\\CourseApplication\\Menus\\GroupMenu.cs",
               "RelativeToolTip": "Menus\\GroupMenu.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwFcAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwB0AAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T09:38:05.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "StudentMenu.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Course-application\\CourseApplication\\Menus\\StudentMenu.cs",
               "RelativeDocumentMoniker": "Menus\\StudentMenu.cs",
               "ToolTip": "C:\\Users\\hp\\Desktop\\Course-application\\CourseApplication\\Menus\\StudentMenu.cs",
               "RelativeToolTip": "Menus\\StudentMenu.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwFwAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T09:37:15.799Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "MusicMenu.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Course-application\\CourseApplication\\Menus\\MusicMenu.cs",
               "RelativeDocumentMoniker": "Menus\\MusicMenu.cs",
               "ToolTip": "C:\\Users\\hp\\Desktop\\Course-application\\CourseApplication\\Menus\\MusicMenu.cs",
               "RelativeToolTip": "Menus\\MusicMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T09:23:39.563Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Course-application\\CourseApplication\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\hp\\Desktop\\Course-application\\CourseApplication\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwDIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T09:11:47.269Z",
               "EditorCaption": ""

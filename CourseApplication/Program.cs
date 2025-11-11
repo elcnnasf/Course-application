@@ -15,13 +15,14 @@ namespace CourseApplication
         static void StartMenu()
         {
 
-            Console.WriteLine(" _________Menu________");
-            Console.WriteLine("|                     |");
-            Console.WriteLine("|  1-Group methods    |");
-            Console.WriteLine("|  2-Student methods  |");
-            Console.WriteLine("|  3-Music settings   |");
-            Console.WriteLine("|  4-Quit             |");
-            Console.WriteLine("|_____________________| ");
+            Console.WriteLine("╔═════════════════════╗");
+            Console.WriteLine("║        Menu         ║");
+            Console.WriteLine("╠═════════════════════╣");
+            Console.WriteLine("║  1-Group methods    ║");
+            Console.WriteLine("║  2-Student methods  ║");
+            Console.WriteLine("║  3-Music settings   ║");
+            Console.WriteLine("║  4-Quit             ║");
+            Console.WriteLine("╚═════════════════════╝");
             while (true)
             {
             firsmenu: Console.Write("Enter your selection:");
