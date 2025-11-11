@@ -83,8 +83,9 @@ namespace CourseApplication.Menus
                         Console.WriteLine("|                     |");
                         Console.WriteLine("|  1-Group methods    |");
                         Console.WriteLine("|  2-Student methods  |");
-                        Console.WriteLine("|  3-Quit             |");
-                        Console.WriteLine("|_____________________|");
+                        Console.WriteLine("|  3-Music settings   |");
+                        Console.WriteLine("|  4-Quit             |");
+                        Console.WriteLine("|_____________________| ");
                         return;
 
                     case "0":

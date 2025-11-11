@@ -21,3 +21,5 @@ C:\Users\hp\Desktop\Course-application\CourseApplication\obj\Debug\net8.0\refint
 C:\Users\hp\Desktop\Course-application\CourseApplication\obj\Debug\net8.0\CourseApplication.pdb
 C:\Users\hp\Desktop\Course-application\CourseApplication\obj\Debug\net8.0\CourseApplication.genruntimeconfig.cache
 C:\Users\hp\Desktop\Course-application\CourseApplication\obj\Debug\net8.0\ref\CourseApplication.dll
+C:\Users\hp\Desktop\Course-application\CourseApplication\obj\Debug\net8.0\Interop.WMPLib.dll
+C:\Users\hp\Desktop\Course-application\CourseApplication\obj\Debug\net8.0\CourseApplication.csproj.ResolveComReference.cache
