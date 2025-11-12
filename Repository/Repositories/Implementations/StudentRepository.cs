@@ -73,12 +73,20 @@ namespace Repository.Repositories.Implementations
                 existing.name = data.name;
                 existing.surname = data.surname;
                 existing.age = data.age;
-                existing.group = data.group;
+                if (data.group != null)
+                {
+                    existing.group = data.group;
+                }
+                else
+                {
+                    throw new ArgumentException("Group cannot be null.");
+                }
             }
             else
             {
                 throw new KeyNotFoundException($"No student found with ID {id}.");
             }
         }
+
     }
 }

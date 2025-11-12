@@ -107,9 +107,8 @@ namespace Service.Services
         {
             var existing = _studentRepository.GetById(id);
             if (existing == null)
-            {
                 throw new KeyNotFoundException($"No student found with ID {id}.");
-            }
+
             if (string.IsNullOrWhiteSpace(student.name) || !student.name.All(char.IsLetter))
                 throw new ArgumentException("Student name must contain only letters and cannot be empty.");
 
@@ -119,13 +118,17 @@ namespace Service.Services
             if (student.age <= 0)
                 throw new ArgumentException("Student age must be a positive number.");
 
-            if (student.group == null)
-                throw new ArgumentException("Group not found.");
+            if (student.group == null || student.group.Id <= 0)
+                throw new ArgumentException("Invalid group. Group ID must be provided.");
 
             student.name = student.name.Trim();
             student.surname = student.surname.Trim();
-            student.group.name = student.group.name.Trim();
-            student.group.teacher = student.group.teacher.Trim();
+
+            if (!string.IsNullOrWhiteSpace(student.group.name))
+                student.group.name = student.group.name.Trim();
+
+            if (!string.IsNullOrWhiteSpace(student.group.teacher))
+                student.group.teacher = student.group.teacher.Trim();
 
             existing.name = student.name;
             existing.surname = student.surname;
@@ -136,5 +139,6 @@ namespace Service.Services
 
             return existing;
         }
-    } 
+
+    }
 }

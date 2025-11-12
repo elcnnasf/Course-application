@@ -50,17 +50,22 @@ namespace CourseApplication.Controllers
                 Console.Beep();
             }
 
-            Console.Write("Enter group name: ");
-            string groupName = Console.ReadLine();
-
-            var exGroup = groupService.GetAll().FirstOrDefault(g => g.name.ToLower() == groupName.ToLower());
-
-            if (exGroup is null)
+            Groups exGroup;
+            while (true)
             {
-                Console.Beep();
-                Helpers.ConsoleColor(ConsoleColor.Red, $"Group with name {groupName} does not exist!");
-                Console.ReadKey();
-                return;
+                Console.Write("Enter new group ID: ");
+                if (int.TryParse(Console.ReadLine(), out int groupId))
+                {
+                    exGroup = groupService.Get(groupId);
+                    if (exGroup != null)
+                        break;
+                    else
+                        Helpers.ConsoleColor(ConsoleColor.Red, $"Group with ID '{groupId}' does not exist!");
+                }
+                else
+                {
+                    Helpers.ConsoleColor(ConsoleColor.Red, "Group ID must be a number!");
+                }
             }
             Student student = new Student
             {
@@ -88,12 +93,15 @@ namespace CourseApplication.Controllers
                 else
                     Helpers.ConsoleColor(ConsoleColor.Red, "Input must be a number!");
             }
+
             var existing = studentService.Get(id);
             if (existing == null)
             {
+                Helpers.ConsoleColor(ConsoleColor.Red, $"No student found with ID {id}.");
                 Console.ReadKey();
                 return;
             }
+
             string name;
             while (true)
             {
@@ -105,6 +113,7 @@ namespace CourseApplication.Controllers
                     Helpers.ConsoleColor(ConsoleColor.Red, "Name must contain only letters!");
                 Console.Beep();
             }
+
             string surname;
             while (true)
             {
@@ -115,6 +124,7 @@ namespace CourseApplication.Controllers
                 else
                     Helpers.ConsoleColor(ConsoleColor.Red, "Surname must contain only letters!");
             }
+
             int age;
             while (true)
             {
@@ -124,17 +134,23 @@ namespace CourseApplication.Controllers
                 else
                     Helpers.ConsoleColor(ConsoleColor.Red, "Age must be a positive number!");
             }
+
             Groups exGroup;
             while (true)
             {
-                Console.Write("Enter new group name: ");
-                string groupName = Console.ReadLine().Trim();
-                exGroup = groupService.GetAll().FirstOrDefault(g => g.name.Equals(groupName, StringComparison.OrdinalIgnoreCase));
-
-                if (exGroup != null)
-                    break;
+                Console.Write("Enter new group ID: ");
+                if (int.TryParse(Console.ReadLine(), out int groupId))
+                {
+                    exGroup = groupService.Get(groupId);
+                    if (exGroup != null)
+                        break;
+                    else
+                        Helpers.ConsoleColor(ConsoleColor.Red, $"Group with ID '{groupId}' does not exist!");
+                }
                 else
-                    Helpers.ConsoleColor(ConsoleColor.Red, $"Group with name '{groupName}' does not exist!");
+                {
+                    Helpers.ConsoleColor(ConsoleColor.Red, "Group ID must be a number!");
+                }
             }
 
             Student student = new Student
@@ -154,8 +170,10 @@ namespace CourseApplication.Controllers
             {
                 Helpers.ConsoleColor(ConsoleColor.Red, $"{ex.Message}");
             }
+
             Console.ReadKey();
         }
+
 
         public static void GetStudentById(StudentService studentService, GroupService groupService)
         {

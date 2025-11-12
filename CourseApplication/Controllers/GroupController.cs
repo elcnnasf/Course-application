@@ -228,4 +228,3 @@ namespace CourseApplication.Controllers
         }
     }
 }
-

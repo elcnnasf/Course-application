@@ -13,6 +13,7 @@ namespace CourseApplication.Menus
     {
         public void Show()
         {
+            
             GroupService groupService = new GroupService();
 
             while (true)
